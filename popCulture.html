@@ -5,37 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome to Team RPG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="test.css" />
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="teamrpg2015.css" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="teamrpg2015.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button class=""w3-bar-item w3-button" onclick="w3_close()">close &times;</button>
-    <a href="homepage.html" class="w3-bar-item w3-button">Welcome Home Senpai!</a>
-	<a href="https://www.youtube.com/channel/UCzJIZqzj3WapDQF13pFxP_g" target="_blank" class="w3-bar-item w3-button">Visit our Youtube channel</a>
-	<a href="about.html" class="w3-bar-item w3-button"> About Us</a>
-	<a href="gamesList.html" class="w3-bar-item w3-button"> Games List</a>
-	<a href="reviewers.html" class="w3-bar-item w3-button"> Reviewers</a>
-    <a href="sidebar.html" class="w3-bar-item w3-button">Sidebar Test</a>
-    <a href="Test.html" class="w3-bar-item w3-button">Reactive Sidebar</a>
-    <a href="anime.html" class="w3-bar-item w3-button">Anime Corner</a>
-    <a href="popCulture.html" class="w3-bar-item w3-button">Pop Culture Corner</a>
-</div>
+<!--This demonstration has been sourced and modifed from https://bootstrapious.com/p/bootstrap-sidebar#sidebar-2, credit goes to them-->
+<div class="wrapper">
 
-<div id ="main">
-
-<div class="w3-teal">
-    <button id="openNav" class="w3-button w3-teal w3-
-    xlarge" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-            <h1>Team RPG 2015</h1>
+    <nav id="sidebar">
+    <!-- Sidebar Header -->
+        <div class="sidebar-header">
+        <h3>Discover Our Exciting Content</h3>
         </div>
-</div>
 
-<div class="w3-container">
+    <!-- Sidebar Links -->
+    <ul class="list-unstyled components">
+            <li><a href="homepage.html">Welcome Home Senpai!</a></li>
+	        <li><a href="https://www.youtube.com/channel/UCzJIZqzj3WapDQF13pFxP_g" target="_blank">Visit our Youtube channel</a></li>
+	        <li><a href="about.html"> About Us</a></li>
+	        <li><a href="gamesList.html"> Games List</a></li>
+	        <li><a href="reviewers.html"> Reviewers</a></li>
+            <li class="active"><a href="anime.html">Anime Corner</a></li>
+            <li><a href="popCulture.html">Pop Culture Corner</a></li>
+        </ul>
+    </nav>
+
+<!-- Page Content -->
+<div id ="content">
+    <div class = w3-teal>
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" align=left;>
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    Toggle Sidebar
+            </button>
+            <h1>Team RPG 2015</h1>
+    </div>
+
+	<div id = "feed">
+			<a class="twitter-timeline" href="https://twitter.com/TeamRpg2015?ref_src=twsrc%5Etfw" data-width="520" 
+			data-height="100vh">Tweets by TeamRpg2015 </a> 
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
 
 
 
-</div>
+
 
 </html>
